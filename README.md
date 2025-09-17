@@ -1,12 +1,12 @@
-# 🕹️ MyGame (Alpha 0.1)
+# 🕹️ Thryndor (Alpha 0.0.1)
 
-Welcome to the **Alpha 0.1** release of *MyGame*! 🎉  
+Welcome to the **Alpha 0.0.1** release of *Thryndor*! 🎉  
 This is an early test build, so expect missing features, bugs, and unfinished content.  
 
 ---
 
 ## ℹ️ About the Game
-*MyGame* is a **sandbox survival RPG hybrid**. You can choose how you want to play:  
+*Thryndor* is a **sandbox survival RPG hybrid**. You can choose how you want to play:  
 - **Sandbox Survival**: Gather resources, build, and survive against the world.  
 - **RPG Adventure**: Take on quests, fight enemies, and progress through skill trees.  
 
@@ -48,6 +48,6 @@ Apple’s system does not allow raw game files to be installed on standard iPhon
 
 ## 💙 Our Promise to Players
 
-*MyGame* will always remain free to play. There will never be microtransactions, pay-to-win systems, or manipulative monetization.  
+*Thryndor* will always remain free to play. There will never be microtransactions, pay-to-win systems, or manipulative monetization.  
 We want players to enjoy the game without feeling exploited.  
 Any future updates or versions will honor this principle.
