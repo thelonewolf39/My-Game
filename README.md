@@ -32,3 +32,17 @@ This is an **early alpha build**:
 
 ## 📥 Download
 You can find the latest build under the **Releases** section of this repository.  
+
+---
+
+## 📱 iOS / Apple Devices
+
+Currently, **iOS is not supported** for open downloads.  
+Apple’s system does not allow raw game files to be installed on standard iPhones or iPads outside of their official platforms.  
+
+### How to Play for Now
+- **Android**: Download the APK and install on your device.  
+- **Linux / PC**: Download the appropriate build from the Releases section.  
+
+> ⚠️ iOS support may come in the future once there’s an official App Store release, but there is **no way to play on iOS directly right now**.
+
