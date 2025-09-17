@@ -46,3 +46,8 @@ Apple’s system does not allow raw game files to be installed on standard iPhon
 
 > ⚠️ iOS support may come in the future once there’s an official App Store release, but there is **no way to play on iOS directly right now**.
 
+## 💙 Our Promise to Players
+
+*MyGame* will always remain free to play. There will never be microtransactions, pay-to-win systems, or manipulative monetization.  
+We want players to enjoy the game without feeling exploited.  
+Any future updates or versions will honor this principle.
