@@ -51,8 +51,22 @@ Apple’s system does not allow raw game files to be installed on standard iPhon
 
 > ⚠️ iOS support may come in the future once there’s an official App Store release, but there is **no way to play on iOS directly right now**.
 
+---
+
 ## 💙 Our Promise to Players
 
 *Thryndor* will always remain free to play. There will never be microtransactions, pay-to-win systems, or manipulative monetization.  
 We want players to enjoy the game without feeling exploited.  
 Any future updates or versions will honor this principle.
+
+---
+
+## Modding Policy
+The current version of the game is closed-source.  
+Every version that becomes 3 releases old will be published as open-source for anyone to study, modify, or fork.  
+
+- Latest 3 versions: Closed-source, supported.  
+- Versions older than that: Open-source, unsupported.  
+
+This way, you can mod older versions freely, while the newest releases keep moving forward.
+
