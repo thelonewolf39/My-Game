@@ -1,1 +1,0 @@
-These are the files for the Windows Edition of Alpha 0.0.1 of Thryndor! You have to download all of these files (except the readme) though releases in the main branch (I cannot upload dll's for some reason :( )to play the game, as it'll corrupt without the files
