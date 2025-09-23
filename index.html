@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thryndor - Alpha 0.0.1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        h1 {
+            color: #ffcc00;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .game-status {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #mob-vote {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .vote-options {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .vote-option {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            flex: 1;
+            min-width: 150px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .vote-option:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+        
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + .vote-option {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            font-weight: bold;
+            box-shadow: 0 0 10px #ffcc00;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            width: 100%;
+            background-color: #1f1f1f;
+            border-top: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thryndor: The Game</h1>
+        <p>A fantasy RPG in alpha.</p>
+    </header>
+
+    <main>
+        <div class="game-status">
+            <h2>Current Status: Alpha 0.0.1</h2>
+            <p>We're hard at work on **Version 0.1.0**! The new update will feature a brand new area, more quests, and a new mob chosen by you!</p>
+        </div>
+
+        <section id="mob-vote">
+            <h2>Help Us Choose a New Mob for 0.1.0!</h2>
+            <p>Cast your vote below for the next creature to be added to the world of Thryndor.</p>
+            <form id="vote-form">
+                <div class="vote-options">
+                    <label>
+                        <input type="radio" name="mob" value="Stone Golem" required>
+                        <div class="vote-option">
+                            <h3>Stone Golem</h3>
+                            <p>A slow but powerful creature of rock, with devastating area attacks.</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="mob" value="Lesser Dragon">
+                        <div class="vote-option">
+                            <h3>Lesser Dragon</h3>
+                            <p>A fast, fire-breathing foe that swoops down from the skies.</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="mob" value="Lich">
+                        <div class="vote-option">
+                            <h3>Lich</h3>
+                            <p>An undead sorcerer that summons skeletons to fight alongside it.</p>
+                        </div>
+                    </label>
+                </div>
+                <button type="submit">Cast Your Vote!</button>
+            </form>
+            <p id="vote-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>The name Thryndor is used for identifying purposes only and is not a registered trademark. Please let me know via issues if this is registered by you</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const voteForm = document.getElementById('vote-form');
+            const voteMessage = document.getElementById('vote-message');
+            
+            // This script handles the "fake" saving of the vote for this demo.
+            // It uses the browser's local storage to remember the user's choice.
+            // This is NOT a public vote and only saves on your own computer.
+            
+            const hasVoted = localStorage.getItem('thryndor_voted');
+            if (hasVoted) {
+                voteForm.style.display = 'none';
+                voteMessage.textContent = 'Thank you for voting! Your choice was: ' + hasVoted;
+            }
+
+            voteForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const selectedMob = document.querySelector('input[name="mob"]:checked');
+                
+                if (selectedMob) {
+                    const mobValue = selectedMob.value;
+                    localStorage.setItem('thryndor_voted', mobValue);
+                    voteMessage.textContent = '🎉 Thank you for your vote! Your choice was: ' + mobValue;
+                    voteForm.style.display = 'none';
+                } else {
+                    voteMessage.textContent = 'Please select a mob to vote for.';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
