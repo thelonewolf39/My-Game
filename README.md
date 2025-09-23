@@ -14,6 +14,11 @@ The goal is to give players **freedom** — you can focus on creativity, adventu
 
 ---
 
+## ℹ️ How To Mob Vote
+In order to participate in the Mob Vote, you must have a github account. Once you do, fork the repo, open the VOTES.md, then edit that and put a checkmark (or -) and start a pull request.
+
+---
+
 ## 📝 Reporting Bugs & Suggesting Features
 - Please use the **Issues tab** to report bugs or suggest features.  
 - I may not reply to your Issue directly, but I **will review it**.  
