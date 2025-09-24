@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212;
+  color: #eee;
+}
+
+header {
+  background: #222;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: #eee;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #00bfff;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  margin-top: 2em;
+}
