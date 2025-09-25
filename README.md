@@ -1,6 +1,6 @@
-# 🕹️ Thryndor (Alpha 0.0.1)
+# 🕹️ Thryndor (Alpha 0.1.0)
 
-Welcome to the **Alpha 0.0.1** release of *Thryndor*! 🎉  
+Welcome to the **Alpha 0.1.0** release of *Thryndor*! 🎉  
 This is an early test build, so expect missing features, bugs, and unfinished content.  
 
 ---
@@ -62,11 +62,5 @@ Any future updates or versions will honor this principle.
 ---
 
 ## Modding Policy
-The current version of the game is closed-source.  
-Every version that becomes 3 releases old will be published as open-source for anyone to study, modify, or fork.  
-
-- Latest 3 versions: Closed-source, supported.  
-- Versions older than that: Open-source, unsupported.  
-
-This way, you can mod older versions freely, while the newest releases keep moving forward.
-
+The current version of the game is closed-source as of right now.  
+Eventually, I'll make a modding website so you can all mod my game.
