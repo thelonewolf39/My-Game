@@ -1,3 +1,6 @@
+# ⚠️ IMPORTANT! ⚠️
+Unity has found a security vulnarablility in all Unity projects 2017+. Sadly, this affects this game. I encourage you to not download this game until this error is resolved. For Windows, windows defender will block the download because of this error. For more info, go to https://unity.com/security/sept-2025-01/remediation
+
 # 🕹️ Thryndor (Alpha 0.1.0)
 
 Welcome to the **Alpha 0.1.0** release of *Thryndor*! 🎉  
